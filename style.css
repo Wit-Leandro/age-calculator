@@ -1,0 +1,198 @@
+body {
+  background-color: #e2dfdf;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+.container {
+  background-color: #fff;
+  width: 500px;
+  height: 500px;
+  border-radius: 5% 5% 20% 5%;
+}
+
+.txtinf {
+  display: grid;
+  grid-template-columns: 130px 130px 130px;
+  grid-template-rows: 1fr 1fr 1px;
+  width: 70%;
+  margin: 0 0 0 0;
+  text-align: start;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 5%;
+  color: rgb(104, 102, 102);
+}
+
+input {
+  width: 80%;
+  height: 25px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+.day {
+  grid-row: 1/ 1;
+  grid-column: 1 / 2;
+  margin-bottom: 0;
+  position: relative;
+  margin-left: 5%;
+  top: 10px;
+}
+
+#txtdd {
+  grid-row: 2/2;
+  grid-column: 1 / 2;
+}
+
+.spanday {
+  grid-column: 1 / 1;
+  grid-row: 3 / 3;
+  margin-left: 5%;
+  font-size: 7pt;
+  color: #f23f5d;
+  position: relative;
+  bottom: 20px;
+}
+
+.month {
+  grid-row: 1 / 1;
+  grid-column: 2 / 2;
+  position: relative;
+  margin-left: 5%;
+  top: 10px;
+}
+#txtmm {
+  grid-column: 2 / 2;
+}
+
+.spanmes {
+  grid-column: 2 / 2;
+  grid-row: 3 / 3;
+  margin-left: 5%;
+  font-size: 7pt;
+  color: #f23f5d;
+  position: relative;
+  bottom: 20px;
+}
+
+.year {
+  grid-row: 1 / 1;
+  grid-column: 3 / 4;
+  position: relative;
+  margin-left: 5%;
+  top: 10px;
+}
+#txtyyy {
+  grid-column: 3 / 3;
+}
+
+.spanano {
+  grid-column: 3 / 3;
+  grid-row: 3 / 3;
+  margin-left: 5%;
+  font-size: 7pt;
+  color: #f23f5d;
+  position: relative;
+  bottom: 20px;
+}
+
+.meio {
+  height: 20px;
+}
+
+.linha {
+  width: 90%;
+  border: 1px solid rgb(170, 169, 169);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+.imagem {
+  margin-left: 80%;
+  position: relative;
+  top: -50px;
+}
+
+img {
+  width: 60px;
+}
+
+img:hover {
+  cursor: pointer;
+  width: 65px;
+}
+
+.result {
+  display: inline-block;
+  width: 90%;
+  height: auto;
+  margin: 0 0 0 0;
+  text-align: start;
+  font-size: 40pt;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.resyyyy {
+  color: hsl(259, 98%, 57%);
+}
+.resmm {
+  color: hsl(259, 98%, 57%);
+}
+
+.resdd {
+  color: hsl(259, 98%, 57%);
+}
+
+.attribution {
+  margin-top: 110px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*---------------Media---------------*/
+
+@media (max-width: 500px) {
+  body {
+    min-height: 55vh;
+  }
+
+  .txtinf {
+    padding-left: 1%;
+  }
+
+  .container {
+    width: 375px;
+    height: 400px;
+  }
+
+  .txtinf {
+    grid-template-columns: 115px 125px 115px;
+  }
+
+  .imagem {
+    margin-left: 10px;
+    position: relative;
+    top: -45px;
+  }
+
+  img {
+    width: 50px;
+  }
+
+  .attribution {
+    margin-top: 10px;
+    font-size: 9px;
+    text-align: center;
+  }
+}
